@@ -53,9 +53,9 @@ body:
       description: What Operating System are you running?
       options:
       - Windows 11
-      - Windows 10 (64bit)
-      - Windows 8.1 (64bit)
-      - Linux (64bit) - Specify Distro Below
+      - Windows 10
+      - Windows 8.1
+      - Linux - Specify Distro Below
     validations:
       required: true
   - type: input
