@@ -1,6 +1,6 @@
 ---
-name: Bug Report / Feature Request
-about: Tech support does not belong here. You should only file an issue here if you think you have experienced an actual bug with Cemu or you are requesting a feature you believe would make Cemu better.
+name: Feature Request
+about: This is for requesting features you believe would make Cemu better.
 title: ''
 labels: ''
 assignees: ''
