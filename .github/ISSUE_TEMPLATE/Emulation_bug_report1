@@ -1,0 +1,113 @@
+# Docs - https://docs.github.com/en/communities/using-templates-to-encourage-useful-issues-and-pull-requests/syntax-for-githubs-form-schema
+name: Emulation Bug Report
+description: Report a issue with the emulation (ie. graphical issue, crashes, unintended behavior with doesn't occur on hardware).
+title: "[BUG]: "
+labels: [Bug]
+body:
+  - type: markdown
+    id: md_readme
+    attributes:
+      value: |
+        ## Important: Read First
+        
+        This is an issue tracker for tracking bugs and feature requests, and as such, please refrain from using it to submit support requests.
+        If you need any support links are provided in the readme.md
+        
+         ### Please Avoid Issues Pertaining to the Following:
+         -TO DO
+  - type: textarea
+    id: current_behavior
+    attributes:
+      label: Current Behavior
+      description: "What the bug is, in a breif decription"
+    validations:
+      required: true
+  - type: textarea
+    id: expected_behavior
+    attributes:
+      label: Expected Behavior
+      description: "What did you expect to happen?"
+    validations:
+      required: true
+  - type: textarea
+    id: steps_to_reproduce
+    attributes:
+      label: Steps to Reproduce
+      description: "How to reprodue the issue"
+      placeholder: |
+       1.
+       2.
+       3.
+       ...
+      value: |
+       1.
+       2.
+       3.
+       ...
+    validations:
+      required: true
+  - type: dropdown
+    id: os_info
+    attributes:
+      label: Operating System Info
+      description: What Operating System are you running?
+      options:
+      - Windows 11
+      - Windows 10 (64bit)
+      - Windows 8.1 (64bit)
+      - Linux (64bit) - Specify Distro Below
+    validations:
+      required: true
+  - type: input
+    id: os_distro
+    attributes:
+      label: Linux Distro
+      description: "If Linux was selected above, what OS are you using?"
+      placeholder: "e.g., Ubuntu Linux, Arch Linux"
+    validations:
+     required: false
+  - type: input
+    id: cpu
+    attributes:
+      label: CPU
+      placeholder: "Example: i7-10700k"
+    validations:
+      required: true
+  - type: input
+    id: gpu
+    attributes:
+      label: GPU
+      placeholder: "Example: GTX 1060"
+    validations:
+      required: true
+  - type: input
+    id: verison
+    attributes:
+      label: Cemu Version
+      description: "Please use the latest build when filing a report."
+  - type: textarea
+    #Available in log file, properly not need
+    attributes:
+      label: Emulation Settings
+      description: |
+       "Any non-default core settings."
+    validations:
+      required: false
+  - type: textarea
+    id: save_file
+    attributes:
+      label: Save file
+      description: "If your issue is occurs far into the game."
+      #Idea, properly not need
+    validations:
+      required: false
+  - type: textarea
+    id: log_flies
+    attributes:
+      label: "Logs"
+      description: |
+        "Log files are located in the cemu folder".
+    validations:
+      required: false
+      
+
