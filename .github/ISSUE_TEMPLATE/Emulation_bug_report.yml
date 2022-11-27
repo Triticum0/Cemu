@@ -1,17 +1,18 @@
 # Docs - https://docs.github.com/en/communities/using-templates-to-encourage-useful-issues-and-pull-requests/syntax-for-githubs-form-schema
 name: Emulation Bug Report
 description: Report a issue with the emulation (ie. graphical issue, crashes, unintended behavior with doesn't occur on hardware).
-title: "[BUG]: "
-labels: [Bug]
+title: "Enter a title here"
+labels: bug
 body:
   - type: markdown
     id: md_readme
     attributes:
       value: |
         ## Important: Read First
+       
+        This issue tracker is for bug reports and feature requests.
         
-        This is an issue tracker for tracking bugs and feature requests, and as such, please refrain from using it to submit support requests.
-        If you need any support links are provided in the readme.md
+        For tech support or questions about Cemu, [follow the links here](https://github.com/cemu-project/Cemu#links).
         
          ### Please Avoid Issues Pertaining to the Following:
          -TO DO
@@ -19,7 +20,7 @@ body:
     id: current_behavior
     attributes:
       label: Current Behavior
-      description: "What the bug is, in a breif decription"
+      description: "What the bug is, in a breif description"
     validations:
       required: true
   - type: textarea
@@ -33,7 +34,7 @@ body:
     id: steps_to_reproduce
     attributes:
       label: Steps to Reproduce
-      description: "How to reprodue the issue"
+      description: "How to reproduce the issue"
       #This can be removed
       placeholder: |
        1.
@@ -82,7 +83,7 @@ body:
     validations:
       required: true
   - type: input
-    id: verison
+    id: version
     attributes:
       label: Cemu Version
       description: "Please use the latest build when filing a report."
@@ -107,7 +108,7 @@ body:
     attributes:
       label: "Logs"
       description: |
-        "Log files are located in the cemu folder".
+        "Attach `log.txt` from your Cemu folder (*File > Open Cemu folder*)".
     validations:
       required: false
       
