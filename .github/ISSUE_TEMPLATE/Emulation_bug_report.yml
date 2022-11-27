@@ -99,7 +99,7 @@ body:
     id: save_file
     attributes:
       label: Save file
-      description: "If your issue is occurs far into the game."
+      description: "If your issue need a save file to reproduce add it here."
       #Idea, properly not need
     validations:
       required: false
